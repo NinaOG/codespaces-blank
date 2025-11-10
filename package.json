@@ -2,7 +2,7 @@
   "name": "codespaces-blank",
   "version": "1.0.0",
   "description": "JS Basics",
-  "main": "src/06_controlflow.js",
+  "main": "src/nina.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
