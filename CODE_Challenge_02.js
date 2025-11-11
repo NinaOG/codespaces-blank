@@ -16,25 +16,3 @@ Alter 13-17 // Cola
 // /************  Ternäre (ternary) Schreibweise ************/
 // console.log( (isJohnOlder) ? "John is older" : "Mark is older")
 
-
-
-
-
-// Funktionsaufruf | call
-
-
-
-// Funktionsrumpf | callee
-// Funktionsdeklaration
-
-/***** Funktionen 02a *****/
-// 2a. Parametrisierung + Datenübergabe von INNEN
-
-/***** Funktionen 02b *****/
-// 2b. Parametrisierung + Datenübergabe von AUSSEN
-
-ausgabeName2(;
-
-function ausgabeName2(firstName) { // Parameter
-    console.log("Hallo, " + firstName + "!");
-}
