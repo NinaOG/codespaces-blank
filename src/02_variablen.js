@@ -5,8 +5,6 @@
 
 
 
-
-
 /***** Variablen 01 *******/
 
 // console.log("Hi!");
