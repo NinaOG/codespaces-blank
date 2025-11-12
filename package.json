@@ -2,7 +2,7 @@
   "name": "codespaces-blank",
   "version": "1.0.0",
   "description": "JS Basics",
-  "main": "src/CodeChallenge_Bestellung",
+  "main": "src/10_funktionen_II.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
