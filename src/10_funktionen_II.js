@@ -13,17 +13,39 @@
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich"; //Ausnahme
 const ERROR_STR_GEN = "Irgendwas ging schief!";
 
+/** Dateneingabe */
+
+const prompt = require('prompt-sync')({sigint: true});
+
+startApp()
+function startApp() {
+	output(calculator(getNum1(),getNum2(),getOp()));
+}
+
+function getNum1() {
+	return parseInt(prompt("Zahl1?: "));
+}
+
+function getNum2() {
+	return parseInt(prompt("Zahl2?: "));
+}
+
+function getOp() {
+	return prompt("OP?: ");
+}
+
+
 /** WAS soll gemacht werden? */
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
 function calculator(a,b,op) {
     
     switch (op) {
@@ -40,9 +62,6 @@ function calculator(a,b,op) {
            
     }
 }
-
-
-
 
 
 /** WIE sollen die Aufgeben gelöst werden? */
@@ -104,4 +123,4 @@ function add(a,b) {
 function output(outputData) {
 	console.log(outputData);
 }
-  
+
